@@ -1,0 +1,8 @@
+apiDir: "../hello-api/src/main/java"
+apiPackagePath: "im.ligas.restbuilder.api"
+application:
+    baseURI: "/restbuilder"
+    className: "HelloApplication"
+    name: "Hello"
+author: "Miroslav Ligas"
+clientDir: "../hello-client/src/main/java"

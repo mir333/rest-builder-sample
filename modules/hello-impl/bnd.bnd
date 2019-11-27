@@ -1,0 +1,3 @@
+Bundle-Name: hello-impl
+Bundle-SymbolicName: im.ligas.restbuilder.impl
+Bundle-Version: 1.0.0
