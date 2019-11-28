@@ -1,18 +1,3 @@
-buildscript {
-    dependencies {
-        classpath group: "com.liferay", name: "com.liferay.gradle.plugins.rest.builder", version: "1.0.38"
-    }
-
-    repositories {
-        maven {
-            url "https://repository-cdn.liferay.com/nexus/content/groups/public"
-        }
-    }
-}
-
-apply plugin: "com.liferay.portal.tools.rest.builder"
-
-
 dependencies {
     compileOnly group: "com.fasterxml.jackson.core", name: "jackson-annotations", version: "2.9.10"
      compileOnly group: "io.swagger.core.v3", name: "swagger-annotations", version: "2.0.5"

@@ -6,3 +6,4 @@ application:
     name: "Hello"
 author: "Miroslav Ligas"
 clientDir: "../hello-client/src/main/java"
+testDir: "../hello-test/src/testIntegration/java"
