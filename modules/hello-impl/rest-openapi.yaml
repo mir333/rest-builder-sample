@@ -1,37 +1,42 @@
 components:
   schemas:
-    Response:
+    Hello:
       description: "Simple response"
       properties:
-        greeting:
-          description: "Full greeting"
+        familyName:
+          description: The author's surname.
+          readOnly: true
           type: string
       type: object
-info:
-  description: ""
-  license:
-    name: "Apache 2.0"
-    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-  title: Hello
-  version: v1.0
 openapi: 3.0.1
+info:
+  description: "simple hello"
+  license:
+        name: "Apache 2.0"
+        url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+  title: "hello"
+  version: v1.0
 paths:
   "/hello/{name}":
     get:
-      operationId: getGreet
-      tags: ["HelloWorld"]
-      description: "simple hello"
+      operationId: getHello
+      tags: ["Hello"]
+      description: simple hello
       parameters:
-        - in: path
-          name: name
+        - name: name
+          in: path
           required: true
           schema:
             type: string
       responses:
         200:
+          description: ""
           content:
             application/json:
               schema:
-                $ref: "#/components/schemas/Response"
-          description: ""
+                $ref: "#/components/schemas/Hello"
+            application/xml:
+              schema:
+                $ref: "#/components/schemas/Hello"
+
 
